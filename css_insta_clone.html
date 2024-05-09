@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing: border-box;
+        }
+        .container{
+            height:100vh;
+            border:2px solid black;
+            display: flex;
+                }
+        .left{
+            height: 100%;
+            width:50%;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position:relative;
+        }
+        .right{
+            height: 100%;
+            width:50%;
+            border: 2px solid black;
+        }
+        .image img{
+                height:500px;
+                width:400px;
+        }
+        .image2{
+            height:390px;
+            width:300px;
+            position: absolute;
+            top: 89px;
+            right:105px;
+
+        }
+        .image2 img{
+            height: 426px;
+            width:220px;
+        }
+        .form{
+            height:400px;
+            width:350px;
+            border:2px solid black;
+        }
+        input{
+            height:30px;
+            width:150px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="image">
+                <img src="insta.png">
+            </div>
+            <div class="image2">
+                <img src="insta2.png">
+            </div>
+        </div>
+        <div class="right">
+            <div class="form">
+                <div class="username">
+                    <form action="">
+                        <input type="text" type="email" type="number" placeholder="Phone number, username or email"><br>
+                        <input type="password" placeholder="Password"><br><br>
+                        <div class="b1">
+                            <button>Log in</button>
+                        </div>
+                    <div class="or">
+                            <span><hr class="hr1"></span><span>OR</span><span><hr class="hr2"></span>
+                    </div>
+                    </form>
+                </div>
+                <div class="forgot_password">
+                    <h3><a href="">Login with facebook</a></h3>
+                    <p>Forgot Password</p>
+                </div>
+                <div class="logo"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

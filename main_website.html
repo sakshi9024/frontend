@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        li{
+            list-style: none;
+        }
+        .header {
+            height: 40px;
+            width: 100%;
+            border: 1px solid #ddd;
+            display: flex;
+            padding-bottom: 10px;
+            position: relative;
+
+        }
+
+        .header_A ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            /* padding-right:300px; */
+            padding-left: 60px;
+            padding-top: 10px;
+        }
+
+        .header_B ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding-left: 370px;
+            padding-top: 10px;
+
+        }
+        .header_C ul{
+            display: flex;
+            justify-content: space-evenly;
+            
+        }
+        .header_C ul li{
+            padding:10px;
+        }
+
+
+        ul li {
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 40px;
+            /* justify-content: space-between; */
+            margin-bottom: 30px;
+            font-size: 15px;
+
+        }
+
+        .header2 {
+            display: flex;
+            /* padding-top:40px; */
+            padding-left: 100px;
+        }
+
+        img {
+            height: 50px;
+            /* padding-bottom: 20px; */
+            padding-top: 8px;
+        }
+
+        .header2 ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+        }
+
+        .header2_A ul li {
+            display: flex;
+            flex-wrap: wrap;
+            padding-right: 10px;
+            /* justify-content: space-between; */
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .header2_B ul{
+            margin-top:22px ;
+
+
+        } 
+
+
+        .header2_B ul li{
+            padding-right: 2px;
+        }
+
+        .header3 {
+            height: 50px;
+            color: white;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        a {
+            color: beige;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .header3_p {
+            font-size: 16px;
+        }
+
+        .display {
+            padding-top: 0px;
+            position: relative;
+
+        }
+
+        .display1 img {
+            height: 600px;
+            width: 100%;
+            padding-top: 0px;
+
+        }
+
+        .display2 {
+            position: absolute;
+            bottom: 200px;
+            right: 200px;
+            line-height: 25px;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: "Dancing Script", cursive;
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .display p {
+            font-size:20px;
+            color: rgb(95, 86, 86);
+            margin-bottom: 20px;
+            word-spacing: 8px;
+
+        }
+
+        button {
+            height: 40px;
+            width: 100px;
+            background-color: black;
+            color: white;
+        }
+        .display3 {
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 80px;
+            padding-right: 100px;
+            padding-top: 21px;
+            justify-content: space-between;
+        }
+        .display3 img{
+            height: 300px;
+            width:360px;
+            margin:0px;
+        
+        }
+        .display3 ul{
+            list-style: none;
+        }
+        
+        .display3 ul li{
+            list-style: none;
+            margin-left: 0px;
+        }
+        .trending{
+            width:100%;
+            display: flex;
+            position: relative;
+            padding-top: 80px;
+        }
+        .trending h3{
+            position: absolute;
+            left:100px;
+            font-size: 35px;
+            font-family: sans-serif;
+            color: #524c43;
+          
+        }
+        .trending ul{
+            display: flex;
+            position: absolute;
+            right:100px;
+        }
+        .trending ul li{
+            font-family: sans-serif;
+            padding-top: 8px; 
+            font-weight:600;
+            color: rgb(36, 34, 34)
+        }
+        /* hr{
+            width:1500px;
+            color:#e7e3da
+
+        } */
+        .trending_outfit {
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 80px;
+            padding-right: 100px;
+            padding-top: 100px;
+            justify-content: space-between;
+        }
+        .trending_outfit img{
+            height: 300px;
+            width:268px;
+        }
+        .trending_outfit ul{
+            list-style-type: none;
+        }
+        .trending_outfit ul li{
+            margin-left: 20px;
+        }
+        .trending_outfit p{
+            padding-top: 30px;
+            text-align: center;
+            line-height: 40px;
+            font-family: sans-serif;
+            color: #4e4a43;
+            font-weight: 600;
+            font-size: 15px;
+        }
+        strike{
+            padding-left: 10px;
+            color: rgb(204, 167, 173);
+        }
+        .Customer_Testmonial{
+            /* height: 600px; */
+            width: 100%;
+            /* background-color: rgb(197, 148, 156); */
+            border: 1px solid black;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header_A">
+            <ul>
+                <li>About Us</li>
+                <li>Privacy</li>
+                <li>FAQ</li>
+                <li>Careers</li>
+            </ul>
+        </div>
+        <div class="header_B">
+            <ul>
+                <li style="border-right: #ddd;">My Wishlist</li>
+                <li>Track Your Order</li>
+            </ul>
+        </div>
+        <div class="header_C">
+            <ul>
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fa-brands fa-linkedin"></i></li>
+                <li><i class="fa-brands fa-youtube"></i></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="header2">
+        <img src="https://preview.colorlib.com/theme/capitalshop/assets/img/logo/logo.png" alt="">
+    
+        <div class="header2_A">
+            <ul>
+                <li>Home</li>
+                <li>Men</li>
+                <li>Women</li>
+                <li>Baby Collection</li>
+                <li>Pages</li>
+                <li>Blog</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="header2_B">
+            <ul>
+                <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                <li><i class="fa-solid fa-address-book"></i></li>
+                <li><i class="fa-solid fa-cart-shopping"></i></li>
+            </ul>
+        </div>
+    </div>
+    <div class="header3">
+        <p>Sale Up To 50% Biggest Discounts. Hurry! Limited Perriod Offer <a href="">Shop Now</a></p>
+    </div>
+    <div class="display">
+        <div class="display1">
+            <img src="https://preview.colorlib.com/theme/capitalshop/assets/img/hero/h1_hero2.jpg" alt="">
+        </div>
+        <div class="display2">
+            <h1>Fashion Sale</h1>
+            <h2>Minimal Menz Style</h2>
+            <p>Consectetur adipisicing elit. Laborum fuga incidunt<br> laboriosam voluptas iure, delectus dignissimos
+                facilis <br>neque nulla earum.</p>
+            <button>SHOP NOW</button>
+
+        </div>
+    </div>
+
+    <div class="display3">
+        <li><img src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/items1.jpg" alt=""></li>
+        <li><img src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/items2.jpg" alt=""></li>
+        <li><img src="	https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/items3.jpg" alt=""></li>
+    </div>
+    <div class="trending">
+        <h3>Trending this week</h3>
+        <div class="trending_header">
+            
+            <ul>
+                <li style="color: red;">Men</li>
+                <li>Women</li>
+                <li>Baby</li>
+                <li>Fashion</li>
+            </ul>
+        </div>
+        <hr>
+        <div class="trending_outfit">
+            <li><img src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest3.jpg" alt="">
+                <p>Cashmere Tank + Bag <br>
+                 $98.00   <strike>$120.00</strike>
+                </p>
+            </li>
+            
+            <li><img src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest4.jpg" alt="">
+                <p>Cashmere Tank + Bag <br>
+                    $98.00   <strike>$120.00</strike>
+                </p>
+            </li>
+            <li><img src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest3.jpg" alt="">
+                <p>Cashmere Tank + Bag <br>
+                    $98.00   <strike>$120.00</strike>
+                </p>
+            </li>
+            <li><img src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest4.jpg" alt="">
+                <p>Cashmere Tank + Bag<br>
+                    $98.00   <strike>$120.00</strike>
+                </p>
+            </li>
+
+        </div>
+    </div>
+    <div class="Customer_Testmonial">
+        <div class="top">
+            <h2>Customer Testimonial</h2>
+            <p>Everybody is different , which is why we offer styles for<br> every body. Laborum fuga incidunt laborosam voluptas <br> iure, delectus dignissimos facilis neque nulla earum.</p>
+        </div>
+        <div class="bottom">
+            <img src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/founder-img.png" alt="">
+            <h2>Petey Cruiser</h2>
+            <h3>Designer at Colorlib</h3>
+        </div>
+    </div>
+</body>
+</html>

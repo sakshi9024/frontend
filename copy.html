@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow Text Shadow</title>
+    <style>
+        *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;  
+        }
+        body{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container{
+
+            height: 400px;
+            width: 400px;
+            /* border: 2px solid black; */
+            /* box-shadow: inset 0px 0px 100px green , inset 0px 0px 100px red; */
+            box-shadow: 0px 0px 100px green , 0px 0px 100px red;
+            padding: 10px;
+            /* overflow: hidden;  */
+             /* overflow-X: scroll; */
+            overflow: auto;  
+        }
+
+        p{
+            font-size: 30px;
+            /* width: 900px; */
+            /* text-align: center; */
+            text-align: justify;
+            font-family: sans-serif;
+            text-shadow: 0px 0px 5px red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni earum consequatur maiores vero error cum rem dignissimos expedita, aliquam autem! Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, quasi excepturi laudantium, sunt dolorum in reiciendis quod, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis perferendis, ipsa dolorem porro consequatur magni rem consectetur placeat nam hic. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, ad? </p>
+    </div>
+</body>
+</html>

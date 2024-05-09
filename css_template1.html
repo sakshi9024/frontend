@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+       
+        .main{
+            position: relative;
+        }
+        .header{
+            height:50px;
+            width:100%;
+            display: flex;
+            justify-content: space-between;
+            position: sticky;
+            top:0px;
+            background-color: white;
+            z-index: 99;
+        }
+
+
+       
+        .right ul{
+            display: flex;
+            
+        }
+        ul li{
+            list-style: none;
+            color: rgb(71, 66, 66);
+            letter-spacing: 4px;
+            font-size: 15px;
+            font-weight: 300;
+            word-spacing: 10px;
+            padding: 20px;
+            
+        }
+        li:hover{
+            background-color: rgb(230, 218, 218);
+        }
+        h1{
+            display:inline-block;
+            font-size: 20px;
+            margin-left: 25px;
+            margin-top: 15px;
+            letter-spacing: 4px;
+            
+        }
+        span{
+            letter-spacing: 4px;
+            margin-left: 6px;
+            font-size: 16px;
+            margin-top: 20px;
+            
+        }
+
+        .container{
+            height:110vh;
+            padding: 0px;
+            position: relative;
+            margin-bottom: 10px;
+            
+        }
+       .logo{
+            height:80px;
+            width:300px;
+            /* border: 1px solid black; */
+            position: absolute;
+            top:270px;
+            left:540px;
+
+        }
+        h6{
+            text-align: center;
+            margin-top: 14px;
+            font-size: 30px;
+            color:white;
+            display: inline-block;
+            /* border:1px solid black; */
+            background-color: #000 ;
+            opacity: 0.7;
+            padding: 15px;
+            letter-spacing: 4px;
+        }
+
+        .logo span{
+            color:white;
+            letter-spacing: 5px;
+            margin-left:15px;
+            font-size: 30px;
+
+        }
+        .container img{
+            height:100%;
+            width:100%;
+            
+        }
+        .container2{
+            padding: 0px 15px;
+            position: relative;
+        }
+        .display{
+            display: flex;
+            /* border: 1px solid black; */
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin-top: 30px;
+            position: relative;
+            
+        }
+
+        .box{
+            width:315px;
+            margin:1px;
+            position: relative;
+        }
+        .box h3{
+            position: absolute;
+            top:0px;
+            font-size: 15px;
+            border:1px solid black;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            margin: 0px;
+        }
+        img{
+            width:100%;
+            position: relative;
+        }
+        h2{
+            padding: 20px 0px;
+            margin-left: 10px;
+            font-family: sans-serif;
+            font-weight: 100;
+            font-size: 25px;
+        }
+
+        .display2{
+            display: flex;
+            /* border: 1px solid black; */
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin-top: 20px;
+            height:412px;
+            
+        }
+        .box1{
+            width:315px;
+            margin:1px;
+        }
+        h3{
+            margin-top: 20px;
+            font-size: 25px;
+            font-family: sans-serif;
+            font-weight: 100;
+        }
+        h4{
+            margin: 20px 0px;
+            color: rgb(105, 102, 102);
+            font-weight: 100;
+        }
+        p{
+            letter-spacing: 2px;
+            font-size: 15px;
+            line-height: 25px;
+            margin-bottom: 10px;
+        }
+        
+        button{
+            width:100%;
+            height:35px;
+            background-color:rgb(228, 217, 217);
+            border: none;
+        }
+        
+
+        h5{
+            font-size: 18px;
+            margin: 20px 10px;
+            font-weight: 100;
+        }
+        input{
+            width:100%;
+            height:45px;
+            padding:10px;
+            font-size: 16px;
+        }
+        .button2 button{
+            height:34px;
+            width:150px;
+            background-color: black;
+            color:white;
+            font-size: 15px;
+            font-family: sans-serif;
+            margin-top: 10px ;
+            margin-left: 10px;
+        }
+        .image2 img{
+            height: 100vh;
+            width:99.50%;
+            margin-top: 40px;
+            margin-left: 10px;
+            
+        }
+        .footer{
+            background-color: black;
+            height:90px;
+            width:100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2px;
+        }
+        .footer p{
+            text-align: center;
+            color: white;
+            
+
+        }
+        a{
+            color: white;
+            
+        }
+        form{
+            margin-left:10px;
+        }
+        
+        button:hover{
+            background-color: rgb(230, 218, 218);
+        }  
+        
+    </style>
+</head>
+
+<body>
+<div class="main">
+    
+    <div class="header">
+        <div class="left">
+            <h1>BR</h1><span>Architects</span>
+        </div>
+        <div class="right">
+            <ul>
+                <li>Projects</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <img src="https://www.w3schools.com/w3images/architect.jpg">
+        <div class="logo">
+            <h6>BR</h6><span>Architects</span>
+        </div>
+    </div>
+    <div class="container2">
+        <h2>Projects</h2>
+        <hr>
+        <div class="display">
+                <div class="box">
+                    <img src="https://www.w3schools.com/w3images/house5.jpg">
+                    <h3>Summer House</h3>
+                </div>
+                <div class="box">
+                    <img src="https://www.w3schools.com/w3images/house2.jpg">
+                    <h3>Brick House</h3>
+                </div>
+                <div class="box">
+                    <img src="https://www.w3schools.com/w3images/house3.jpg">
+                    <h3>Rennovated</h3>
+                </div>
+                <div class="box">
+                    <img src="https://www.w3schools.com/w3images/house4.jpg">
+                    <h3>Barn House</h3>
+                </div>
+                <div class="box">
+                    <img src="https://www.w3schools.com/w3images/house2.jpg"">
+                    <h3>Summer House</h3>
+                </div>
+                <div class="box">
+                    <img src="https://www.w3schools.com/w3images/house4.jpg">
+                    <h3>Brick House</h3>
+                </div>
+                <div class="box">
+                    <img src="https://www.w3schools.com/w3images/house5.jpg">
+                    <h3>Rennovated</h3>
+                </div>
+                <div class="box">
+                    <img src="https://www.w3schools.com/w3images/house3.jpg">
+                    <h3>Barn House</h3>
+                </div>
+        </div>
+        <div class="content">
+            <h2>About</h2>
+            <p style="margin-left: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione labore expedita aliquid a ex quos, tenetur sed magnam beatae dolores laborum porro, odit quam inventore dolor voluptates hic iusto repellat. Ut fugit ullam quibusdam nulla? Dicta qui deleniti pariatur obcaecati eaque porro rem dolorum rerum animi quam nobis dolores atque quod hic modi dignissimos reiciendis id nostrum repellendus nemo odit, tenetur eos quibusdam earum. Architecto accusantium nulla sit blanditiis sunt totam obcaecati saepe  </p>
+        </div>
+        <div class="display2">
+            <div class="box1">
+                <img src="	https://www.w3schools.com/w3images/team2.jpg">
+                <h3>John Doe</h3>
+                <h4>CEO & FOUNDER</h4>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <button>Contact</button>
+            </div>
+            <div class="box1">
+                <img src="https://www.w3schools.com/w3images/team1.jpg">
+                <h3>Jane Doe</h3>
+                <h4>Architect</h4>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <button>Contact</button>
+            </div>
+            <div class="box1">
+                <img src="https://www.w3schools.com/w3images/team3.jpg">
+                <h3>Mike Ross</h3>
+                <h4>Architect</h4>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <button>Contact</button>
+            </div>
+            <div class="box1">
+                <img src="https://www.w3schools.com/w3images/team4.jpg">
+                <h3>Dan Star</h3>
+                <h4>Architect</h4>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <button>Contact</button>
+            </div>
+        </div>
+        <div class="contact">
+            <h2>Contact</h2>
+            <hr>
+            <h5>Lets get in touch and talk about your next project.</h5>
+            <form action="">
+                <input type="text" placeholder="Name"><br><br>
+                <input type="email" placeholder="Email"><br><br>
+                <input type="text" placeholder="Subject"><br><br>
+                <input type="text" placeholder="Contact"><br><br>
+            </form>
+            <div class="button2">
+                <button>SEND MESSAGE</button>
+            </div>
+        </div>
+        <div class="image2">
+        <img src="https://www.w3schools.com/w3images/map.jpg">
+        </div>
+    </div>
+    <div class="footer">
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp">w3.css</p>
+    </div>
+</div>
+</body>
+</html>

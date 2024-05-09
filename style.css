@@ -1,0 +1,22 @@
+h1{
+    color:blue;
+    text-align: center;
+}
+.a1{
+    width : 400px;
+}
+.a2{
+    background-color: beige;
+    border-radius: 10px;
+    padding: 20px;
+    width: 500px;
+    height: 300px;
+    
+}
+body{
+    background-color: black;
+}
+.a3{
+    background-color: blue;
+    width : 400px;
+}

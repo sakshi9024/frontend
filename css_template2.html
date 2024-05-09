@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+
+        }
+
+        .main {
+            display: flex;
+            position: relative;
+
+        }
+
+        .container_left {
+            height: 100vh;
+            width: 22%;
+            background-color: #f44336;
+            position: sticky;
+            top: 0px;
+            z-index: 99;
+        }
+
+        h4 {
+            padding-top: 120px;
+            color: white;
+            font-size: 27px;
+            font-weight: 600;
+            font-family: sans-serif;
+            margin-left: 40px;
+            padding-bottom: 60px;
+        }
+
+        ul li {
+            margin-top: 20px;
+            margin-left: 40px;
+            color: white;
+            font-size: 19px;
+            font-weight: bold;
+            font-family: sans-serif;
+            list-style: none;
+        }
+
+        .container_right {
+            border: 1px solid black;
+            width: 78%;
+            height: 100%;
+            padding-top: 70px;
+            padding-left: 45px;
+            padding-right: 45px;
+        }
+
+        .heading {
+            margin-top: 40px;
+
+
+        }
+
+        h1 {
+            font-size: 55px;
+            color: black;
+            font-family: "Poppins", sans-serif;
+            font-weight: bold;
+
+        }
+
+        h2 {
+            font-size: 48px;
+            color: #f44336;
+            font-family: "Poppins", sans-serif;
+            font-weight: bolder;
+            margin-top: 30px;
+
+        }
+
+        hr {
+            width: 70px;
+            height: 12px;
+            background-color: red;
+            border-radius: 5px;
+            margin-top: 25px;
+            margin-bottom: 20px;
+        }
+
+        .display img {
+            height: 400px;
+            width: 462.5px;
+            margin-top: 10px;
+
+
+        }
+
+        .display2 img {
+            height: 260px;
+            width: 462.5px;
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .display {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            margin-left: 0px;
+
+        }
+
+        .display2 {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            margin-left: 0px;
+            margin-bottom: 80px;
+        }
+
+        p {
+            line-height: 25px;
+            font-size: 16px;
+            font-family: sans-serif;
+            margin-bottom: 70px;
+
+        }
+
+        h5 {
+            font-size: 16px;
+            padding-bottom: 20px;
+        }
+
+        .box1 img {
+            height: 250px;
+            width: 312px;
+            /* margin-right:15px; */
+
+
+        }
+
+        .display3 {
+            margin-top: 0px;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .box1 {
+            background-color: rgb(228, 216, 216);
+            margin-top: 8px;
+            height: 450px;
+
+
+        }
+
+        .box1 h5 {
+            font-size: 16px;
+            padding-bottom: 20px;
+            padding-top: 20px;
+            color: grey;
+            font-family: sans-serif;
+            font-weight: 100;
+            margin-left: 20px;
+        }
+
+        h3 {
+            font-size: 28px;
+            font-family: sans-serif;
+            font-weight: 100;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+        .box1 p {
+            margin-left: 20px;
+        }
+
+        .box2 {
+            display: flex;
+            flex-wrap: wrap;
+            /* border: 1px solid black; */
+            height: 700px;
+            width: 100%;
+            margin-bottom: 80px;
+            justify-content: space-evenly;
+
+        }
+
+        .left1 {
+            width: 50%;
+            /* border: 1px solid grey; */
+            background-color: rgb(247, 243, 243);
+            /* margin:5px; */
+
+
+
+        }
+
+        .left1 .step1 {
+            height: 15%;
+            background-color: rgb(124, 111, 111);
+            color: white;
+            text-align: center;
+            padding-top: 35px;
+            font-size: 27px;
+
+
+        }
+
+        .right1 {
+            width: 50%;
+            background-color: rgb(247, 243, 243);
+            /* padding: 10px; */
+
+        }
+
+        .right1 .step1 {
+            height: 15%;
+            border-bottom: 1px solid #ddd;
+            background-color: #f44336;
+            color: white;
+            text-align: center;
+            padding-top: 35px;
+            font-size: 27px;
+        }
+
+        .step2 {
+            height: 10%;
+            border-bottom: 1px solid #ddd;
+            font-size: 20px;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .step3 {
+            height: 10%;
+            border-bottom: 1px solid #ddd;
+            font-size: 20px;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .step4 {
+            height: 10%;
+            border-bottom: 1px solid #ddd;
+            font-size: 20px;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .step5 {
+            height: 10%;
+            border-bottom: 1px solid #ddd;
+            font-size: 20px;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .step6 {
+            height: 10%;
+            border-bottom: 1px solid #ddd;
+            font-size: 20px;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .step7 {
+            height: 20%;
+            border-bottom: 1px solid #ddd;
+            font-size: 34px;
+            padding-top: 35px;
+            text-align: center;
+        }
+
+        span {
+            font-size: 19px;
+            color: grey;
+            display: block;
+            margin-top: 8px;
+        }
+
+        .step8 {
+            height: 20%;
+            border-bottom: 1px solid #ddd;
+            padding-top: 32px;
+            text-align: center;
+        }
+
+        .left1 button {
+            height: 45px;
+            width: 100px;
+            font-size: 20px;
+            font-weight: 100;
+            font-family: sans-serif;
+            background-color: white;
+            border: none;
+        }
+
+        .right1 button {
+            height: 45px;
+            width: 100px;
+            font-size: 20px;
+            font-weight: 100;
+            font-family: sans-serif;
+            background-color: #f44336;
+            border: none;
+        }
+
+        .Contact p {
+            line-height: 25px;
+            font-size: 16px;
+            font-family: sans-serif;
+            margin-bottom: 20px;
+        }
+
+        input {
+            height: 40px;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-size: 15px;
+            font-family: sans-serif;
+        }
+
+        form {
+            margin-bottom: 60px;
+        }
+
+        .Contact button {
+            width: 100%;
+            height: 40px;
+            margin-bottom: 15px;
+            background-color: #f44336;
+            border: none;
+        }
+
+        .footer {
+            height: 150px;
+            width: 100%;
+            background-color: rgb(247, 241, 241);
+            padding: 0px;
+            margin: 0px;
+            position: relative;
+
+        }
+
+        .footer span {
+            display: inline-block;
+            font-size: 13px;
+            color: black;
+
+        }
+
+        h6 {
+            font-size: 16px;
+            font-family: sans-serif;
+            font-weight: 100;
+            position: absolute;
+            top: 60px;
+            right: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container_left">
+            <h4>Company<br> Name</h4>
+            <ul>
+                <li>Home</li>
+                <li>Showcase</li>
+                <li>Services</li>
+                <li>Designers</li>
+                <li>Packages</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="container_right">
+            <div class="heading">
+                <h1>Interior Design</h1>
+                <h2>Showcase Design.</h2>
+                <hr>
+            </div>
+            <div class="display">
+                <img src="https://www.w3schools.com/w3images/kitchenconcrete.jpg">
+                <img src="https://www.w3schools.com/w3images/atrium.jpg" alt="">
+            </div>
+            <div class="display2">
+                <img src="https://www.w3schools.com/w3images/livingroom2.jpg	" alt="">
+                <img src="https://www.w3schools.com/w3images/livingroom.jpg" alt="">
+                <img src="https://www.w3schools.com/w3images/bedroom.jpg" alt="">
+                <img src="https://www.w3schools.com/w3images/diningroom.jpg" alt="">
+            </div>
+            <h2>Services.</h2>
+            <hr>
+            <p>We are a interior design service that focus on what's best for your home and what's best for you!<br><br>
+
+                Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <h2>Designers.</h2>
+            <hr>
+            <p>The best team in the world.<br><br>
+
+                We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <h5><strong>Our designers are thoughtfully chosen:</strong></h5>
+            <div class="display3">
+
+                <div class="box1">
+                    <img src="https://www.w3schools.com/w3images/team2.jpg" alt="">
+                    <h3>John Doe</h3>
+                    <h5>CEO & Founder</h5>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                    </p>
+                </div>
+                <div class="box1">
+                    <img src="https://www.w3schools.com/w3images/team1.jpg" alt="">
+                    <h3>Jane Doe</h3>
+                    <h5>Designer</h5>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                    </p>
+                </div>
+                <div class="box1">
+                    <img src="https://www.w3schools.com/w3images/team3.jpg" alt="">
+                    <h3>Mike Ross</h3>
+                    <h5>Architecture</h5>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                    </p>
+                </div>
+            </div>
+            <h2>Packages.</h2>
+            <hr>
+            <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco. </p>
+            <div class="box2">
+                <div class="left1">
+                    <div class="step1">Basic</div>
+                    <div class="step2">Floorplanning</div>
+                    <div class="step3">10 hours support</div>
+                    <div class="step4">Photography</div>
+                    <div class="step5">20% furniture discount</div>
+                    <div class="step6">Good deals</div>
+                    <div class="step7">$ 199 <span>per room</span></div>
+                    <div class="step8">
+                        <button>Sign up</button>
+                    </div>
+                </div>
+                <div class="right1">
+                    <div class="step1">pros</div>
+                    <div class="step2">Floorplanning</div>
+                    <div class="step3">50 hours support</div>
+                    <div class="step4">Photography</div>
+                    <div class="step5">50% furniture discount</div>
+                    <div class="step6">GREAT deals</div>
+                    <div class="step7">$ 249 <span>per room</span></div>
+                    <div class="step8">
+                        <button>Sign up</button>
+                    </div>
+
+                </div>
+
+            </div>
+            <h2>Contact.</h2>
+            <hr>
+            <div class="Contact">
+                <p>Do you want us to style your home? Fill out the form and fill me in with the details : We love
+                    meeting new people!</p>
+                <form action="">
+                    <label for="name">Name</label><br>
+                    <input type="text"><br>
+                    <label for="email">Email</label><br>
+                    <input type="email"><br>
+                    <label for="message">Message</label><br>
+                    <input type="text">
+                    <button>Send Message</button>
+                </form>
+            </div>
+            <div class="footer">
+                <h6>Powered by <span>w3.css</span></h6>
+            </div>
+        </div>
+        
+    </div>
+
+</body>
+
+</html>

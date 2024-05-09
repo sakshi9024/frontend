@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding:0px;
+            box-sizing: border-box;
+        }
+        .box{
+            height:100px;
+            width:100px;
+            animation-name: item;
+            border: 2px solid black;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            position: relative;
+        }
+        /* @keyframes item{
+
+            from{
+                width: 0px;
+                border-radius: 0px;
+                background-color: red;
+                height:0px;
+                poition:absolute;
+                top:0px;
+                left:0px;
+            }
+            to{
+                width: 1000px;
+                background-color: green;
+                height: 700px;
+                border-radius: 0px 200px 200px 0px;
+                position: absolute;
+                top:200px;
+                left:200px;
+
+            }
+
+        } */
+    @keyframes item{
+
+        0%{
+            top:0px;
+            left:0px;
+            background-color:red;
+        }
+        25%{
+            top:0px;
+            left:500px;
+            background-color:blue
+        }
+        50%{
+            top:500px;
+            left:500px;
+            background-color: green;
+        }
+        75%{
+            top:500px;
+            left:0px;
+            background-color:yellow;
+        }
+        100%{
+            top:0px;
+            left:0px;
+            background-color: pink;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
